@@ -1,0 +1,219 @@
+﻿<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+		<meta charset="utf-8">
+
+		
+		<title>Webbläsar utredning</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>ProCap - Webbläsarutredning</h1>
+					<ul>
+						<li>Vilken webbläsare används mest?</li>
+						<li>Samma val för internt och externt bruk?</li>
+						<li>Följs standarder?</li>
+						<li>Kan webbläsarna köra våra befintliga system?</li>
+					</ul>
+				</section>
+
+			
+				<section>
+					<h2>Webbläsaranvändning i Sverige</h2>
+
+					<img 
+						src="img/stats.png" style="width:800px"/>
+				</section>
+
+				<section>
+					<h2>Samma val för internt och externt bruk?</h2>
+
+					<ul>
+						<li>Vi kan inte styra våra externa användares val av webbläsare.</li>
+						<li>Vi kan styra interna användare.</li>
+						<li>Billigare att utveckla för en webbläsare istället för flera.</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Standarder</h2>
+					<h4>The second rize of the web</h4>
+					
+					<p>
+						Microsoft dödar innovationerna genom att inte utveckla IE. 
+					</p>
+					
+					<p>
+						Men de senaste åren har innovationerna tagit fart som aldrig förr. 
+						<br /><br />
+						<small>Mozilla Firefox, Web 2.0, gmail, google maps, google docs... </small>
+						<br/><br/>
+						Teknikerna har nu börjat standardiseras under paraply termen HTML5.
+					</p>
+					<img 
+						src="http://upload.wikimedia.org/wikipedia/commons/6/6e/HTML5-logo.svg" style="width:150px"/>
+				</section>
+				
+				<section>
+					<h2>Organisationer</h2>
+					
+					<ul>
+						<li>W3C - World Wide Web Consortium</li>
+						<li>WHATWG - Web Hypertext Application Technology Working Group</li>
+						<li>ECMA - European association for standardizing information and communication systems</li>
+						<li>Khronos</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Tekniker</h3>
+					<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/HTML5-APIs-and-related-technologies-by-Sergey-Mavrody.png/800px-HTML5-APIs-and-related-technologies-by-Sergey-Mavrody.png" />
+
+				</section>
+				
+				<section>
+					<h2>Tekniker vi valt att ta i beaktan</h2>
+					
+					<ul>
+						<li>JavaScript motorer</li>
+						<li>Web Socket</li>
+						<li>Binära data typer</li>
+						<li>Rika renderings möjligheter såsom WebGL</li>
+						<li>CSS3</li>
+						<li>Cache</li>
+						<li>Web workers</li>
+					</ul>
+
+				</section>
+				
+				<section>
+					<h2>Tekniker / Web Socket</h2>
+					
+					<iframe src="http://caniuse.com/websockets/embed/" 
+						style="width:1000px;height:420px;"></iframe>
+						
+					Standardiserat även på serversidan i JEE 7 under JSR-356
+					
+				</section>
+				
+				
+				<section>
+					<h2>Tekniker / Binära data typer</h2>
+					
+					<iframe src="http://caniuse.com/bloburls/embed/" style="width:1000px;height:370px;">
+					</iframe>
+					
+				</section>
+
+				<section>
+					<h2>Kan webbläsarna köra våra befintliga system?</h2>
+<br/>					
+					<h3>Share Point</h3>
+					Från och med version 2010, klarar de fyra största webbläsarnas senaste releaser.
+<br/><br/>
+					<h3>Oracle Forms</h3>
+					Java applet
+
+				</section>
+
+				<section>
+					<h2>Beslutsförslag</h2>
+					
+					<h3>Interna användare</h3>
+					
+					<ul>
+						<li>Interna användare bör använda Google Chrome som standard webbläsare.</li>
+						<li>IE8 behålls som sekundär webbläsare för att garantera bakåtkompabilitet mot äldre system.</li>
+						<li>IE8 fasas successivt ut och uppdateras ej till nyare versioner av IE.</li>
+					</ul>
+
+
+				</section>
+
+				<section>
+					<h2>Beslutsförslag</h2>
+					
+					<h3>Externa användare</h3>
+					<ul>
+						<li>Stöd för Google Chrome</li>
+						<li>Stöd för IE9 och senare versioner</li>
+						<li>Stöd för Apple Safari</li>
+						<li>Stöd för Firefox</li>
+					</ul>
+
+				</section>
+
+				
+			</div>
+
+
+
+
+		
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+			
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/zoom-js/zoom.js', condition: function() { return !!document.body.classList; } },
+					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } }
+				]
+			});
+			
+		</script>
+
+	</body>
+</html>
